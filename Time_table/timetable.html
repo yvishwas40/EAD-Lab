@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timetable</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .container {
+            width: 95%;
+            margin: 20px auto;
+        }
+        .timetable {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #ffffff;
+            border: 1px solid #dee2e6;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+        .timetable th, .timetable td {
+            border: 1px solid #dee2e6;
+            text-align: center;
+            padding: 10px;
+            font-size: 0.9em;
+        }
+        .timetable th {
+            background-color: #343a40;
+            color: #ffffff;
+            font-size: 1em;
+            text-transform: uppercase;
+        }
+        .timetable tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        .timetable tr:hover {
+            background-color: #e9ecef;
+        }
+        .timetable caption {
+            margin-bottom: 15px;
+            font-size: 1.4em;
+            font-weight: bold;
+            color: #495057;
+            text-align: left;
+            padding: 10px;
+        }
+        .highlight {
+            background-color: #ffc107;
+            font-weight: bold;
+            color: #212529;
+        }
+        .lunch-cell {
+            background-color: #e9ecef;
+            font-style: italic;
+            font-weight: bold;
+            color: #495057;
+        }
+        .course-details {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #ffffff;
+            border: 1px solid #dee2e6;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .course-details th, .course-details td {
+            border: 1px solid #dee2e6;
+            text-align: left;
+            padding: 10px;
+            font-size: 0.9em;
+        }
+        .course-details th {
+            background-color: #343a40;
+            color: #ffffff;
+            font-size: 1em;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table class="timetable">
+            <caption>Semester VI Timetable - CSE(AI&ML) Room : E203</caption>
+            <thead>
+                <tr>
+                    <th>Day/Time</th>
+                    <th>9:10 - 10:10 AM</th>
+                    <th>10:10 - 11:10 AM</th>
+                    <th>11:15 - 12:15 PM</th>
+                    <th class="lunch-cell">LUNCH</th>
+                    <th>1:00 - 2:00 PM</th>
+                    <th>2:00 - 3:00 PM</th>
+                    <th>3:05 - 4:05 PM</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday</td>
+                    <td  colspan="2">DVA LAB / EAD LAB</td>
+                    <td>DL</td>
+                    <td rowspan="6" class="lunch-cell">LUNCH</td>
+                    <td>ACD</td>
+                    <td>NLP</td>
+                    <td>UHV</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>DCCN</td>
+                    <td>DL</td>
+                    <td>ACD</td>
+                    <td colspan="3">DL LAB<br>Lab 3 & Lab 4</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>DL</td>
+                    <td>DCCN</td>
+                    <td>DVA/EAD</td>
+                    <td colspan="3">NLP LAB</td>
+                    
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>ACD</td>
+                    <td>DCCN</td>
+                    <td>DVA/EAD</td>
+                    <td>NLP</td>
+                    <td colspan="2">ES LAB (B1)</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>DVA/EAD</td>
+                    <td>DCCN</td>
+                    <td>NLP</td>
+                    <td>ACD</td>
+                    <td colspan="2">ES LAB (B2)</td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td colspan="7">MENTORING</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="course-details">
+            <caption>Course Details</caption>
+            <thead>
+                <tr>
+                    <th>Sub-Code</th>
+                    <th>Course Name</th>
+                    <th>Faculty</th>
+                    <th>Email ID</th>
+                    <th>Mobile Number</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>22CAC06</td>
+                    <td>Data Communication and Computer</td>
+                    <td>Smt. D. Naga Jyothi</td>
+                    <td>dnagajyothi_cseaiml@cbit.ac.in</td>
+                    <td>8008023453</td>
+                </tr>
+                <tr>
+                    <td>22CAC04</td>
+                    <td>Deep Learning</td>
+                    <td>Dr. K. Prabhakar</td>
+                    <td>prabhakark_aiml@cbit.ac.in</td>
+                    <td>9705795005</td>
+                </tr>
+                <tr>
+                    <td>22CAC07</td>
+                    <td>Automata and Compiler Design</td>
+                    <td>Smt. T. Ramya</td>
+                    <td>tramya_cseaiml@cbit.ac.in</td>
+                    <td>8897505973</td>
+                </tr>
+                <tr>
+                    <td>22CAC08</td>
+                    <td>Natural Language Processing</td>
+                    <td>Sri Panigrahi Srikanth</td>
+                    <td>panigrahisrikanth_cseaiml@cbit.ac.in</td>
+                    <td>8099136324</td>
+                </tr>
+                <tr>
+                    <td>22EEM01</td>
+                    <td>Universal Human Values – II</td>
+                    <td>Dr. Bishwamath Mishra</td>
+                    <td>bishwamathm_biotech@cbit.ac.in</td>
+                    <td>7036442532</td>
+                </tr>
+                <tr>
+                    <td>22ITE18</td>
+                    <td>Enterprise Application Development</td>
+                    <td>Smt. G. Kavitha</td>
+                    <td>gkavita_cseaiml@cbit.ac.in</td>
+                    <td>9885117207</td>
+                </tr>
+                <tr>
+                    <td>22CAE03</td>
+                    <td>Data and Visual Analytics using AI</td>
+                    <td>Sri Panigrahi Srikanth</td>
+                    <td>panigrahisrikanth_cseaiml@cbit.ac.in</td>
+                    <td>8099136324</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
